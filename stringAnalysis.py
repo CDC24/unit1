@@ -5,7 +5,7 @@
 
 sentence = input("Type a sentence. ")
 character = input("what character do you want to search for? ")
-print ("There are",sentence.count(character))"'s in your sentence.")
+print ("The letter",character,"appears",sentence.count(character),"times in your sentence.")
 
 word = input("what word do you want to search for? ")
-print ("Your sentence has",sentence.count(word)),"of the word",word)
+print ("Your sentence has",sentence.count(word),"of the word",word)
