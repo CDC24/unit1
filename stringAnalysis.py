@@ -4,6 +4,15 @@
 
 
 sentence = input("Type a sentence. ")
+space= (" ")
+period=(".")
+comma=(",")
+apostrophe=("'")
+
+print ("There are",len(sentence),"characters in your sentence.")
+print ("There are",int(len(sentence))- int(sentence.count(space)+sentence.count(period)+sentence.count(comma)+sentence.count(apostrophe)),"letters in your sentence.")
+
+
 character = input("what character do you want to search for? ")
 print ("The letter",character,"appears",sentence.count(character),"times in your sentence.")
 
