@@ -6,4 +6,4 @@ num = (input("Enter an 8-digit binary number with spaces between each digit: "))
 
 a, b, c, d, e, f, g, h = num.split()
 
-print (h*10**0 + g*10**1 + f*10**2 + e*10**3 + d*10**4 + c*10**5 + b*10**6 + a*10**7)
+print (a*2**7 + b*2**6 + c*2**5 + d*2**4 + e*2**3 + f*2**2 + g*2**1 + h*2**0)
