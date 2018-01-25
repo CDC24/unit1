@@ -5,14 +5,16 @@
 
 allMoney = float(input("Enter an amount of money.  $"))
 
-quarters= (allMoney//0.25)
-print (quarters,"quarters")
+cents= (allMoney*100)
 
-dimes = ((allMoney-(quarters*0.25))//0.10)
-print (dimes,"dimes")
+quarters= int(cents//25)
+print ("quarters:",quarters)
 
-nickels = ((allMoney-(quarters*0.25)-(dimes*0.10))//0.05)
-print (nickels,"nickels")
+dimes = int((cents-(quarters*25))//10)
+print ("dimes:",dimes)
 
-pennies = ((allMoney-(quarters*0.25)-(dimes*0.10)-(nickels*0.05))//0.01)
-print (pennies, "pennies")
+nickels = int((cents-(quarters*25)-(dimes*10))//5)
+print ("nickels:",nickels)
+
+pennies = int((cents-(quarters*25)-(dimes*10)-(nickels*5))/1)
+print ("pennies:",pennies)
