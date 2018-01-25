@@ -6,6 +6,8 @@ A = float(input("Enter side A: "))
 B = float(input("Enter side B: "))
 C = float(input("Enter side C: "))
 
-min(A+B) == C
-min(B+C)== A
-min(C+A)== B
+small = min(A,B,C)
+large = max(A,B,C)
+med = (A + B + C - small - large)
+
+print(small + med > large)
