@@ -14,6 +14,14 @@ yellow = Color(0xffff00, 1)
 line = LineStyle(3,yellow)
 rectangleYellow = RectangleAsset(100,100,line,yellow)
 
+green = Color(0x00ff00, 1)
+line = LineStyle(3,green)
+rectangleGreen = RectangleAsset(100,100,line,green)
+
+blue = Color(0x0000ff, 1)
+line = LineStyle(3,blue)
+rectangleBlue = RectangleAsset(100,100,line,blue)
+
 from random import randint
 
 num = randint (1,4)
@@ -30,9 +38,13 @@ elif num == 2:
     myApp.run()
 
 elif num == 3:
-    print ("Matzo balls")
+    Sprite(rectangleGreen)
+    myApp = App()
+    myApp.run()
 
 elif num == 4:
-     print ("Matzo balls")
+    Sprite(rectangleBlue)
+    myApp = App()
+    myApp.run()
 
 
