@@ -3,11 +3,13 @@
 #warmUp3.py- a buzz game about divisibility
 
 
-num = float(input("Enter a number: ")
-seven = ("seven")
+num = int(input("Enter a number: "))
+
+seven = (7)
 
 if num%7 == 0:
     print ("buzz")
 elif num.count(seven) > 0:
     print ("buzz")
-else: print (num)
+else: 
+    print (num)
